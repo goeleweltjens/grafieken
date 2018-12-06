@@ -1,0 +1,160 @@
+body {
+      background-color: white;
+      width: 615px;
+      margin: 50px auto;
+}
+
+.taartdiagram {
+	position: relative;
+	height: 500px;
+      width: 500px;
+	background-color: white;
+}
+
+
+.common {
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+}
+
+.outside-border {
+      border: 3px solid #EEE;
+      top: -6px;
+      left: -6px;
+      width: 506px;
+      height: 506px;
+}
+
+.inner-basis {
+      background: tomato;
+}
+
+.common-pie-slice {
+      clip-path: inset(0px 250px 0px 0px);
+}
+
+.slice_1_container {
+	transform: rotate(100deg);
+}
+
+.slice_1 {
+      transform: rotate(40deg);
+      background-color: salmon;
+}
+
+
+.slice_2_container {
+	transform: rotate(160deg);
+}
+
+.slice_2 {
+	background-color: DARKSALMON;
+	transform: rotate(92deg);
+}
+
+.slice_3_container {
+	transform: rotate(180deg);
+}
+
+.slice_3 {
+	background-color: LIGHTSALMON;
+	transform: rotate(144deg);
+}
+
+
+p.label {
+	color: black;
+	font-family: helvetica;
+  text-align: left;
+	position: absolute;
+	border-bottom: 2px solid black;
+	padding: 0px 0px 0px 60px;
+	width: 130px;
+}
+
+.slice_1_label {
+      top: 20px;
+      left: 410px;
+    }
+
+.slice_2_label {
+      top: 260px;
+      left: 500px;
+    }
+
+.slice_3_label {
+      top: 450px;
+      left: 350px;
+    }
+
+.slice_4_label {
+      top: 330px;
+      left: -170px;
+      text-align: left;
+    }
+h1{
+  position: absolute;
+  top: 600px;
+  left: 390px;
+  font-family: 'Pontano Sans', sans-serif;
+  border-bottom: 2px solid DARKSALMON;
+  border-top: 2px solid darksalmon;
+  font-size: 30px;
+}
+
+#piechart{
+  position: absolute;
+  top: 760px;
+  left:315px;
+}
+
+ul {
+      width: 20em;
+      margin: 2em auto;
+      font-family: helvetica;
+      position: absolute;
+      top: 1300px;
+      left:490px;
+}
+
+ul li {
+      counter-increment: myCounter;
+      margin: 0 0 0 0;
+      padding: 0 0 0 4.5em;
+      line-height: 4em;
+      position: relative;
+      font-size: 2em;
+      font-weight: 900;
+      font-family: 'Pontano Sans', sans-serif;
+}
+
+ul li::before {
+      content: counter(myCounter,decimal-leading-zero);
+      display: inline-block;
+      text-align: center;
+      line-height: 2em;
+      width: 2em;
+      background-color: lightpink;
+      color: salmon;
+      padding: .5em;
+      position: absolute;
+      top: .5em;
+      left: .5em;
+}
+
+ul li:hover:before {
+      background-color: tomato;
+}
+h2{
+  position: absolute;
+  top: 1730px;
+  left: 400px;
+  font-family: 'Pontano Sans', sans-serif;
+  border-bottom: 2px solid DARKSALMON;
+  border-top: 2px solid darksalmon;
+  font-size: 30px;
+  margin-bottom: 100px;
+
+}

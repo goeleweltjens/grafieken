@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<title>taartiagram</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="stijl.css">
+		<link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+		<script src="script.js" defer></script>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1> Waar gaan Vlamingen het liefst op vakantie? </h1>
+		<div class="taartdiagram">
+      <div class="common outside-border"></div>
+      <div class="common inner-basis"></div>
+      <div class="common common-pie-slice slice_1_container">
+            <div class="common common-pie-slice slice_1"></div>
+      </div>
+      <div class="common common-pie-slice slice_2_container">
+	      <div class="common common-pie-slice slice_2"></div>
+      </div>
+      <div class="common common-pie-slice slice_3_container">
+	      <div class="common common-pie-slice slice_3"></div>
+      </div>
+      <p class="label slice_1_label">Spanje 32%</p>
+	<p class="label slice_2_label">Nederland 31%</p>
+      <p class="label slice_3_label">Duitsland 26%</p>
+			<p id="nederland"class="label slice_4_label">Frankrijk 62%</p>
+</div>
+	</body>
+</html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Chillen',     11],
+          ['Slapen',      2],
+          ['Sporten',  2],
+          ['Film kijken', 2],
+          ['Koken',    7]
+        ]);
+
+        var options = {
+          title: 'Dingen die ik het liefst doe'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+<html>
+<h2> Wat eet ik het liefst tussen mijn boterham?</h2>
+<ul>
+      <li>Kaas</li>
+      <li>Hesp</li>
+      <li>Chocopasta</li>
+</ul>
+</html>
